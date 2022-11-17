@@ -262,8 +262,14 @@ main {
     background: url("../img/colecao/arte3.jpg");
 }
 
+.card-text {
+    width: 100%;
+    background-color: #fff;
+}
+
 .container-galeria .card-text {
     grid-area: text;
+    font-family: 'Inter', sans-serif;
     margin: 0px;
     border-top: black 1px dashed;
 }
