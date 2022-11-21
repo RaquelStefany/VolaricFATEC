@@ -53,10 +53,18 @@ nav ul li a {
     margin-bottom: -5px;
 }
 
+#fundo{
+    background-image: url("../img/tribal-volaric.jpg");
+}
+
 /* SOBRE NÓS */
 
 #sobre-nos {
-    background-color: black;
+    /* background-color: black;
+    background-image: url(../img/tribal-volaric.jpg); */
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 6em;
 }
 
@@ -124,7 +132,7 @@ nav ul li a {
 /* GALERIA */
 
 #nft {
-    background-image: url("../img/tribal-volaric.jpg");
+    /* background-image: url("../img/tribal-volaric.jpg"); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -516,12 +524,12 @@ footer a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 4em;
     background: rgba(132, 106, 221, .9);
 }
 
 #contato .wrap-contact100 {
-    width: 50%;
+    width: 60%;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -529,6 +537,7 @@ footer a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 4em 10em;
+    align-items: center;
 }
 
 #contato .contact100-pic {
@@ -548,7 +557,7 @@ footer a:hover {
     display: block;
     font-family: 'Inter';
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     color: #333;
     line-height: 1.2;
     text-align: left;
@@ -556,10 +565,11 @@ footer a:hover {
 }
 
 #contato input.input100 {
-    height: 50px;
+    height: 60px;
     border-radius: 25px;
     padding: 0 30px 0 50px;
     width: 95%;
+    background: lightgrey;
 }
 
 #contato textarea.input100 {
@@ -567,13 +577,18 @@ footer a:hover {
     border-radius: 25px;
     padding: 14px 30px;
     resize: none;
+    background: lightgrey;
 }
 
 #contato .wrap-input100 {
     position: relative;
     width: 100%;
     z-index: 1;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#contato .input100::placeholder{
+    color: rgba(0, 0, 0, 0.726);
 }
 
 #contato .input100 {
@@ -653,7 +668,7 @@ footer a:hover {
 
 #contato .contact100-form-btn {
     width: 100%;
-    height: 50px;
+    height: 60px;
     border-radius: 25px;
     background: #846add;
     font-family: 'Inter';
@@ -779,5 +794,190 @@ footer a:hover {
     #contato .alert-validate::before {
         visibility: visible;
         opacity: 1;
+    }
+}
+
+@media(max-width:1600px) {
+    nav ul li {
+        font-size: 18px;
+    }
+
+    #nft {
+        padding: 0 0 5em;
+    }
+
+    .sobre-nos-info h1 {
+        font-size: 45px;
+    }
+
+    .sobre-nos-info p {
+        font-size: 18px;
+    }
+
+    .sobre-nos-info a {
+        font-size: medium;
+    }
+
+    .nft-descricao h1 {
+        font-size: 30px;
+    }
+
+    .nft-descricao p {
+        font-size: 16px;
+    }
+
+    .nft-descricao a {
+        font-size: medium;
+    }
+
+    .container-nft img {
+        width: 50%;
+    }
+
+    .galeria-descricao p {
+        font-size: 24px;
+    }
+
+    .galeria-descricao h1 {
+        font-size: 40px;
+    }
+
+    .container-galeria .card-text p {
+        margin: auto 1em;
+    }
+
+    .container-galeria a{
+        font-size: small;
+    }
+
+    .container-galeria .card {
+        width: 80%;
+    }
+
+    .container-galeria .card-text h2 {
+        margin-top: 5px;
+    }
+
+    footer img {
+        width: 8vw;
+    }
+
+    footer a {
+        font-size: small;
+    }
+
+    #contato .container-contact100 {
+        padding: 3em;
+    }
+
+    #contato .wrap-contact100 {
+        width: 70%;
+        padding: 2em 6em 3em 4em;
+        justify-content: space-around;
+    }
+
+    #contato input.input100 {
+        height: 50px;
+    }
+}
+
+@media(max-width:1100px) {
+    #sobre-nos{
+        padding: 3em;
+    }
+
+    .container img {
+        width: 50%;
+    }
+
+    .sobre-nos-info h1 {
+        margin-bottom: 1em;
+    }
+
+    .sobre-nos-info p {
+        margin: 2em auto;
+    }
+
+    .container-nft{
+        display: block;
+        padding: 3em;
+    }
+
+    .container-nft img {
+        width: 100%;
+    }
+
+    .nft-descricao h1 {
+        margin-top: 1em;
+        font-size: 30px;
+    }
+
+    .nft-descricao p {
+        font-size: 18px;
+    }
+
+    .container-galeria{
+        margin: 0;
+    }
+
+    .container-galeria .card{
+        width: 90%;
+    }
+
+    #contato .wrap-contact100{
+        width: 100%;
+    }
+
+    footer > div{
+        justify-content: space-between;
+        padding: 0 6em;
+    }
+
+    footer img {
+        width: 10vw;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:770px) {
+    nav ul{
+        width: 45vw;
+        justify-content: space-evenly;
+    }
+
+    nav img {
+        width: 10vw;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .container{
+        padding: 2em;
+    }
+
+    .container img {
+        width: 40%;
+    }
+
+    .sobre-nos-info{
+        margin: 0;
+    }
+
+    .sobre-nos-info h1 {
+        font-size: 40px;
+    }
+
+    .sobre-nos-info p {
+        font-size: 16px;
+        padding-right: 2em;
+    }
+
+    .container-nft {
+        padding: 2em;
     }
 }
