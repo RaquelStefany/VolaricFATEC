@@ -983,11 +983,21 @@ footer a:hover {
 }
 
 #infografico{
-    margin: 1em;
+    background-image: url(../img/tribal-volaric.jpg);
+}
+
+#infografico > div{
+    background-color: rgba(66, 66, 66, 1);
+    margin: 1em 6em;
+    display: inline-block;
+    padding: 2em;
+    color: white;
 }
 
 #infografico h1{
     text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
 #infografico #image{
@@ -996,4 +1006,52 @@ footer a:hover {
 
 #image img{
     width: 50%;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+}
+
+.info .icon{
+    font-size: 112px;
+    margin-right: 0.3em;
+}
+
+.info .texto{
+    text-align: justify;
+}
+
+#historia{
+    background-image: url(../img/tribal-volaric.jpg);
+}
+
+#historia > div{
+    background-color: #35c13c;
+    margin: 1em 6em;
+    display: inline-block;
+    padding: 2em;
+    color: white;
+}
+
+#historia #header h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+
+#historia #header #image{
+    text-align: center;
+}
+
+#historia #header img{
+    width: 70%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#historia p{
+    font-family: 'Inter', sans-serif;
 }
