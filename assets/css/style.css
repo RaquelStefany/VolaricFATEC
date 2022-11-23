@@ -981,3 +981,19 @@ footer a:hover {
         padding: 2em;
     }
 }
+
+#infografico{
+    margin: 1em;
+}
+
+#infografico h1{
+    text-align: center;
+}
+
+#infografico #image{
+    text-align: center;
+}
+
+#image img{
+    width: 50%;
+}
