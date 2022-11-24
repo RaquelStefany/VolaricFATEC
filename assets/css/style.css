@@ -7,6 +7,19 @@ body {
     list-style: none;
 }
 
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    background: green;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    border-radius: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -689,6 +702,7 @@ footer a:hover {
 
 #contato .contact100-form-btn:hover {
     background: #333;
+    color: white;
 }
 
 @media(max-width:1200px) {
