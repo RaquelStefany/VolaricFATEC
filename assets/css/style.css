@@ -33,7 +33,7 @@ nav img {
 }
 
 nav ul {
-    width: 40vw;
+    width: 45vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -423,15 +423,16 @@ footer img {
     width: 10vw;
 }
 
-footer div #menu {
+footer div #menu > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 15%;
 }
 
-footer div #menu div {
+footer div #menu div div{
     display: grid;
+    margin: 0.5em;
 }
 
 footer a {
@@ -813,7 +814,7 @@ footer a:hover {
 
 @media(max-width:1600px) {
     nav ul li {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #nft {
